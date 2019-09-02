@@ -213,6 +213,7 @@ html .land-body .container .signup button {
 body{
   font-size:1.8rem;
   margin: 2%;
+  background:whitesmoke;
 }
 
 .bigInput{
@@ -231,13 +232,16 @@ body{
   align-items:center;
   margin:3%;
   justify-content:flex-end;
-  align-content:center;
+  align-items:center;
   flex-direction:column;
+  margin-bottom:30px;
+  
 }
 
 
 input, textarea{
   margin-left:30px;
+  
 }
 
 .frm1{
@@ -271,7 +275,7 @@ h1{
 .zeclogo{
   margin:0 auto;
  
-  width:40%;
+  width:30%;
 }
 img{
   max-width:100%;
