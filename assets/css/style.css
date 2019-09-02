@@ -217,7 +217,7 @@ body{
 }
 
 .bigInput{
-  width:400px;
+  width:70%;
   height:300px;
 }
 
@@ -226,18 +226,24 @@ body{
 
 } */
 
-.inform{
+.inForm{
   
   display:flex;
+  width:100%;
+  justify-content:space-between;
   align-items:center;
-  margin:3%;
-  justify-content:flex-end;
-  align-items:center;
-  flex-direction:column;
+
   margin-bottom:30px;
-  
 }
 
+.address{
+  width:70%;
+  height:1.6rem;
+}
+
+.amount{
+  height:1.6rem;
+}
 
 input, textarea{
   margin-left:30px;
@@ -245,7 +251,7 @@ input, textarea{
 }
 
 .frm1{
-  margin:2% auto;
+  margin:0 auto;
   display:flex;
   flex-direction:column;
   align-items:flex-end;
@@ -279,4 +285,8 @@ h1{
 }
 img{
   max-width:100%;
+}
+
+span{
+  font-weight:bold;
 }
