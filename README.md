@@ -6,3 +6,4 @@ Needed Features:
 -Address validity check
 -Payment amount validity check
 -Other syntax-related error catching
+-Create multiple sends if the transactions exceeds 54 joinsplits
