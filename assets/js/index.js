@@ -9,6 +9,7 @@ function convertToHex(str) {
 document.getElementsByTagName("button")[0].addEventListener("click", function(){
     
     inputs = document.getElementsByTagName("textarea");
+    console.log(inputs);
     
     for (i = 0 ; i < inputs.length ; i ++){
         console.log(inputs[i].value);
