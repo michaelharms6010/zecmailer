@@ -217,7 +217,7 @@ body{
 }
 
 .bigInput{
-  width:70%;
+  width:650px;
   height:150px;
 }
 
@@ -238,7 +238,7 @@ body{
 }
 
 .address{
-  width:70%;
+  width:650px;
   height:1.6rem;
 }
 
@@ -291,6 +291,7 @@ img{
 
 span{
   font-weight:bold;
+  width:135px;
 }
 
 .donoBeg{
