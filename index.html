@@ -24,8 +24,9 @@
         <div class="inForm"><span>Amount: </span><textarea placeholder="0.01000000"class="amount" type="text"></textarea></div>
 
         <div class="inForm"><span>Memo (In ascii): </span><textarea maxlength="512" placeholder="Type your memo here. Don't be shy!" class="bigInput" type="text""></textarea></div>
-        <textarea id="output" placeholder="Your formatted z_sendmany will appear here"></textarea>
+        <input id="output" placeholder="Your formatted z_sendmany will appear here"></input>
         <button>Generate z_sendmany command</button>
+        <button onclick="myFunction()">Copy text to clipboard</button>
         
     </div>
     <hr>

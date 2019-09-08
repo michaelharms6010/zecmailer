@@ -32,6 +32,15 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
   }); 
 
 
+  function myFunction() {
+    var copyText = document.getElementById("output");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Copied the text: " + copyText.value);
+  }
+
+
 
 
 
