@@ -83,6 +83,7 @@ time,
 mark,
 audio,
 video {
+  box-sizing:border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -301,4 +302,10 @@ span{
 
 hr{
   margin-top:5%;
+}
+
+#output{
+  margin-top:2%;
+  width:794px;
+  height:300px;
 }

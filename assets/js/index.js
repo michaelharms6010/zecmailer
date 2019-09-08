@@ -28,7 +28,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo}\\"},`);
     outString = outString.substring(0, outString.length - 1);
     outString+= ']"'
-    output.textContent = outString;
+    output.value = outString;
   }); 
 
 
