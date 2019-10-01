@@ -24,7 +24,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     to = to.map( item => item.replace("\n",""));
     to = to.filter( item => item);
     console.log(to);
-    let amount = inputArray[2].value;
+    let amount = (inputArray[2].value[0] === ".") ? `0${inputArray[2].value}` : inputArray[2].value;
     console.log(amount);
     let memo = inputArray[3].value;
     
