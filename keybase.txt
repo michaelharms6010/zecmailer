@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/brunch
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://znewsletter.netlify.com
+  * I am brunch (https://keybase.io/brunch) on keybase.
+  * I have a public key ASA3jOJZQRrlQsy0CmgPdyGYrXTtPNwDIjqyfiladgQvPwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120378ce259411ae542ccb40a680f772198ad74ed3cdc03223ab27e295a76042f3f0a",
+      "host": "keybase.io",
+      "kid": "0120378ce259411ae542ccb40a680f772198ad74ed3cdc03223ab27e295a76042f3f0a",
+      "uid": "07829281031d4a33b91c92053c000019",
+      "username": "brunch"
+    },
+    "merkle_root": {
+      "ctime": 1570540095,
+      "hash": "5a16a3de419dfd853ac3ecb008eda426c4b330652e34b929005b3836fce060940d3224ad525c3a78110fdcfc80fb153cc6f149854bc09eac8b68a0dd1c483197",
+      "hash_meta": "da54ba9bace9f75bf8c250b6bac66f80c37493af0f88e7a768423587459964e6",
+      "seqno": 7908047
+    },
+    "service": {
+      "entropy": "bXpk4++lsmDGHP1GiunKqrah",
+      "hostname": "znewsletter.netlify.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.5.0"
+  },
+  "ctime": 1570540126,
+  "expire_in": 504576000,
+  "prev": "78c36011ba9e43306a8b528cd9c567a3a23b846a0034c18bab99f11fe529b085",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgN4ziWUEa5ULMtApoD3chmK107TzcAyI6sn4pWnYELz8Kp3BheWxvYWTESpcCEMQgeMNgEbqeQzBqi1KM2cVno6I7hGoANMGLq5nxH+UpsIXEIHHSOi2kOLZnu+MqtPr0IZhnqBJ/tPNWhCu7B2zp9RB1AgHCo3NpZ8RAg4OvinF2etbrxJrBj/AjKvEEJ/NHPj2bxj7+YQpm15KqeaSL3OjrsQxstRTD8U094nfE26dKrQU4UqwfQkFcAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJ9SpP6vQfBNBFE5r94fTKUKQXt4PH8kEcEKInhDlGCeo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brunch
+
+==================================================================
