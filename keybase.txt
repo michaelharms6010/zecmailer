@@ -54,3 +54,60 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/brunch
 
 ==================================================================
+
+==================================================================
+https://keybase.io/brunch
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://zecmailer.com
+  * I am brunch (https://keybase.io/brunch) on keybase.
+  * I have a public key ASA3jOJZQRrlQsy0CmgPdyGYrXTtPNwDIjqyfiladgQvPwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120378ce259411ae542ccb40a680f772198ad74ed3cdc03223ab27e295a76042f3f0a",
+      "host": "keybase.io",
+      "kid": "0120378ce259411ae542ccb40a680f772198ad74ed3cdc03223ab27e295a76042f3f0a",
+      "uid": "07829281031d4a33b91c92053c000019",
+      "username": "brunch"
+    },
+    "merkle_root": {
+      "ctime": 1570658454,
+      "hash": "5e1f066f4ed8375f315a47e9252eb633e55698d1eabb80ae23426ef11eb5fd6f53aad47493b0b4603ed889e620281d9d0bc811b11d0649c5c8610ba7228d9e20",
+      "hash_meta": "d06b24d34691b63e74072cb2e1cf646704cc6fbbebec330021877d6d5507032b",
+      "seqno": 7944763
+    },
+    "service": {
+      "entropy": "5o9DUMM5o2wnEaZenOu8tbOt",
+      "hostname": "zecmailer.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.5.0"
+  },
+  "ctime": 1570658481,
+  "expire_in": 504576000,
+  "prev": "22023e3d1cee32697c92befbf20a7cbab26fd4c27987fad29535a0dc0a5c46d2",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgN4ziWUEa5ULMtApoD3chmK107TzcAyI6sn4pWnYELz8Kp3BheWxvYWTESpcCFMQgIgI+PRzuMml8kr778gp8urJv1MJ5h/rSlTWg3ApcRtLEICFoPOWhgG9hCz+AhZDcv6skfeTiwCk1UnGwGyCr4dOVAgHCo3NpZ8RA/Q5kT96xNhFnaWLiZSSLOostgpJSC1wGj6Kvvpg8fXljcZVUfG4qdcLiXg/YMkJ4sSGKA2tFkszdI8ojqvOvBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAPhufRR/i+LdArzvMOwK+WWe9RjIzjHwsMX7zlzpgGco3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brunch
+
+==================================================================
