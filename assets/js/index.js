@@ -38,7 +38,7 @@ function convertToHex ( str ) {
 		if (highsurrogate != 0) {  
 			if (0xDC00 <= cc && cc <= 0xDFFF) {
 				suppCP = 0x10000 + ((highsurrogate - 0xD800) << 10) + (cc - 0xDC00); 
-				outputString += ' '+dec2hex2(0xF0 | ((suppCP>>18) & 0x07)) + ' ' + dec2hex2(0x80 | ((suppCP>>12) & 0x3F)) + ' ' + dec2hex2(0x80 | ((suppCP>>6) & 0x3F)) + ' ' + dec2hex2(0x80 | (suppCP & 0x3F));
+				outputString += ''+dec2hex2(0xF0 | ((suppCP>>18) & 0x07)) + '' + dec2hex2(0x80 | ((suppCP>>12) & 0x3F)) + '' + dec2hex2(0x80 | ((suppCP>>6) & 0x3F)) + '' + dec2hex2(0x80 | (suppCP & 0x3F));
 				highsurrogate = 0;
 				continue;
 				}
@@ -52,8 +52,8 @@ function convertToHex ( str ) {
 			}
 		else {
 			if (cc <= 0x7F) { outputString += ''+dec2hex2(cc); }
-			else if (cc <= 0x7FF) { outputString += ''+dec2hex2(0xC0 | ((cc>>6) & 0x1F)) + ' ' + dec2hex2(0x80 | (cc & 0x3F)); } 
-			else if (cc <= 0xFFFF) { outputString += ''+dec2hex2(0xE0 | ((cc>>12) & 0x0F)) + ' ' + dec2hex2(0x80 | ((cc>>6) & 0x3F)) + ' ' + dec2hex2(0x80 | (cc & 0x3F)); } 
+			else if (cc <= 0x7FF) { outputString += ''+dec2hex2(0xC0 | ((cc>>6) & 0x1F)) + '' + dec2hex2(0x80 | (cc & 0x3F)); } 
+			else if (cc <= 0xFFFF) { outputString += ''+dec2hex2(0xE0 | ((cc>>12) & 0x0F)) + '' + dec2hex2(0x80 | ((cc>>6) & 0x3F)) + '' + dec2hex2(0x80 | (cc & 0x3F)); } 
 			}
 		}
 	return outputString.substring(0);
