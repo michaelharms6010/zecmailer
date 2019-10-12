@@ -309,3 +309,9 @@ hr{
   width:794px;
   height:300px;
 }
+
+.new-user {
+  background: moccasin;
+  border: 1px solid black;
+  padding:5px;
+}
