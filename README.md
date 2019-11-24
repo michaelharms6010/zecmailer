@@ -11,4 +11,4 @@ Needed Features:
 
 ### Warning
 
-This has been very minimally tested! Any reports are appreciated.
+This has been very minimally tested! Any reports are appreciated. Contact @michaelharms70 via twitter
