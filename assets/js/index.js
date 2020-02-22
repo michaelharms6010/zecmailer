@@ -94,6 +94,35 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     output.value = outString;
   }); 
 
+  document.getElementsByTagName("button")[1].addEventListener("click", function(){
+    
+    inputs = document.getElementsByTagName("textarea");
+    console.log(inputs);
+    
+    for (i = 0 ; i < inputs.length ; i ++){
+        console.log(inputs[i].value);
+        inputArray.push(inputs[i]);
+    }
+	
+    let to = inputArray[1].value.trim().split(",");
+    // remove whitespace and falsy items
+    to = to.map( item => item.replace("\n",""));
+    to = to.filter( item => item);
+    console.log(inputArray[2].value);
+    let amount = Number(inputArray[2].value) * 100000000;
+    console.log(amount);
+    let memo = inputArray[3].value;
+
+    output = document.getElementById("output");
+    let outString = `zecwallet-cli send "[`;
+
+    to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo}\\"},`);
+    
+    outString = outString.substring(0, outString.length - 1);
+    outString+= ']"'
+    output.value = outString;
+  }); 
+
 
   function myFunction() {
     var copyText = document.getElementById("output");
