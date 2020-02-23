@@ -74,7 +74,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     console.log(from);
     let to = inputArray[1].value.trim().split(",");
     // remove whitespace and falsy items
-    to = to.map( item => item.replace("\n",""));
+    to = to.map( item => item.split(" ").join("").split("\n").join(""));
     to = to.filter( item => item);
     console.log(to);
     let amount = (inputArray[2].value[0] === ".") ? `0${inputArray[2].value}` : inputArray[2].value;
@@ -106,7 +106,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
 	
     let to = inputArray[1].value.trim().split(",");
     // remove whitespace and falsy items
-    to = to.map( item => item.replace("\n",""));
+    to = to.map( item => item.split(" ").join("").split("\n").join(""));
     to = to.filter( item => item);
     console.log(inputArray[2].value);
     let amount = Number(inputArray[2].value) * 100000000;
