@@ -4,7 +4,7 @@ ZECMailer is a mass-mailing / payroll application for sending multiple people Zc
 This is an exercise in making a website in only Vanilla JS. Sorry! Eventually a React version will be ported on top of ZECPages.com - repo located here https://github.com/michaelharms6010/fe-zeitpages/issues
 
 ## Future Development
-Needed Features:
+Needed Features: 
 -Address validity check
 -Payment amount validity check
 -Other syntax-related error catching
