@@ -105,14 +105,11 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     // remove whitespace and falsy items
     to = to.map( item => item.split(" ").join("").split("\n").join(""));
     to = to.filter( item => item);
-    console.log(inputArray[2].value);
     let amount = Number(inputArray[2].value) * 100000000;
-    console.log(amount);
     let memo = inputArray[3].value;
 
     output = document.getElementById("output");
     let outString = `zecwallet-cli send "[`;
-    console.log(memo)
     to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo.split('"').join('\\"')}\\"},`);
     
     outString = outString.substring(0, outString.length - 1);
