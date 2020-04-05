@@ -84,7 +84,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     if (memo) {
       to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo}\\"},`);
     } else {
-      to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount} },`);
+      to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}},`);
     }
     outString = outString.substring(0, outString.length - 1);
     outString+= ']"'
@@ -112,7 +112,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     if(memo) {
       to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo.split('"').join("'")}\\"},`);
     } else {
-      to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount} },`);
+      to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}},`);
     }
     
     outString = outString.substring(0, outString.length - 1);
