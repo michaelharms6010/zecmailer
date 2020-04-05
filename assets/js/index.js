@@ -62,23 +62,18 @@ function convertToHex ( str ) {
 document.getElementsByTagName("button")[0].addEventListener("click", function(){
     
     inputs = document.getElementsByTagName("textarea");
-    console.log(inputs);
     
     for (i = 0 ; i < inputs.length ; i ++){
-        console.log(inputs[i].value);
         inputArray.push(inputs[i]);
     }
 
-    console.log(inputArray);
+
     let from = inputArray[0].value;
-    console.log(from);
     let to = inputArray[1].value.trim().split(",");
     // remove whitespace and falsy items
     to = to.map( item => item.split(" ").join("").split("\n").join(""));
     to = to.filter( item => item);
-    console.log(to);
     let amount = (inputArray[2].value[0] === ".") ? `0${inputArray[2].value}` : inputArray[2].value;
-    console.log(amount);
     let memo = inputArray[3].value;
     
 
@@ -86,9 +81,11 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
 
     output = document.getElementById("output");
     let outString = `zcash-cli z_sendmany "${from}" "[`;
-
-    to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo}\\"},`);
-    
+    if (memo) {
+      to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo}\\"},`);
+    } else {
+      to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount} },`);
+    }
     outString = outString.substring(0, outString.length - 1);
     outString+= ']"'
     output.value = outString;
@@ -115,8 +112,8 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
 
     output = document.getElementById("output");
     let outString = `zecwallet-cli send "[`;
-
-    to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo}\\"},`);
+    console.log(memo)
+    to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo.split('"').join('\\"')}\\"},`);
     
     outString = outString.substring(0, outString.length - 1);
     outString+= ']"'
