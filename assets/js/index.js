@@ -107,10 +107,13 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     to = to.filter( item => item);
     let amount = Number(inputArray[2].value) * 100000000;
     let memo = inputArray[3].value;
-
     output = document.getElementById("output");
     let outString = `zecwallet-cli send "[`;
-    to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo.split('"').join('\\"')}\\"},`);
+    if(memo) {
+      to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount}, \\"memo\\":\\"${memo.split('"').join("'")}\\"},`);
+    } else {
+      to.forEach(item => outString += `{\\"address\\": \\"${item}\\",\\"amount\\": ${amount} },`);
+    }
     
     outString = outString.substring(0, outString.length - 1);
     outString+= ']"'
