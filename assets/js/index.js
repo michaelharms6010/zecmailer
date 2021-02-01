@@ -105,7 +105,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
     // remove whitespace and falsy items
     to = to.map( item => item.split(" ").join("").split("\n").join(""));
     to = to.filter( item => item);
-    let amount = Number(inputArray[2].value) * 100000000;
+    let amount = Math.round(Number(inputArray[2].value) * 100000000);
     let memo = inputArray[3].value;
     output = document.getElementById("output");
     let outString = `zecwallet-cli send "[`;
