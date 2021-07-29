@@ -131,7 +131,6 @@ html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
-  height: 100%;
   padding: 0;
 }
 .container {
@@ -142,9 +141,6 @@ html {
   .container {
     width: 100%;
   }
-}
-html {
-  height: 100%;
 }
 html .land-body {
   background: url(../img/landing-bg.png);
@@ -266,7 +262,7 @@ button{
 }
 
 p{
-  margin:3% 0;
+  margin:3%;
   line-height:1.6;
 
 }
@@ -280,6 +276,10 @@ h1{
   background:#f9bb00;
   margin:2% auto;
   width:95%;
+}
+
+.break-text {
+  word-break: break-word;
 }
 
 .zeclogo{
@@ -300,6 +300,7 @@ span{
   font-size:16px;
   text-align:center;
   margin: 5px auto;
+  padding-bottom: 10px;
 }
 
 hr{
